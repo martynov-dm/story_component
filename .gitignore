@@ -1,0 +1,77 @@
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Logs
+/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*-log.http
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules/
+
+# npm
+.npm
+package-lock.json
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env*
+!.env.example
+
+# environment variable file for http
+*.private.env.json
+
+# Build artifacts
+dist
+.output
+worker
+
+# Service worker
+sw.*
+
+# macOS
+.DS_Store
+
+# Storybook
+storybook-static
+
+# BOM
+bom.xml
+bom.json
+
+# Sitespeed
+/sitespeed/sitespeed-result
+/sitespeed/deploy
+
+# export data
+@cxp/artifact/cli/contentful-dev-environment/data/
+@cxp/artifact/ecomhub/kv-store/
+
+# miniflare/wrangler storage
+.mf
+.wrangler
+
+# swc cache
+.swc
+
+# GraphQL schema introspection results
+.graphql-cache
+
+# DynamoDB shared base instance
+@cxp/artifact/product-assembler/docker/dynamodb/shared-local-instance.db
+
+# ignore extra_ca_cert folder that is necessary for C&A employees to get install of native
+# dependencies working
+extra_ca_certs
